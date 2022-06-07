@@ -1,0 +1,139 @@
+body{
+    background-image: url("https://as1.ftcdn.net/v2/jpg/02/15/22/24/1000_F_215222458_YOwLVKx8QHe6bzzWfbRhslBQlB3W5VQU.jpg");
+}
+main {       
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    grid-template-columns: 85% auto;   
+    grid-template-areas: 
+        "header header"
+        "recetas aside"
+        "footer footer"; 
+}
+
+
+
+header{
+    grid-area: header;
+    background-color: #ebebeb;
+    box-shadow: 0 0 5px rgb(139, 139, 139);
+    padding: 0px;
+    margin: 0px;
+}
+header h1 {
+    display: flex;
+    box-shadow: 0 0 5px rgb(139, 139, 139);
+    padding: 0px;
+    margin: 20px;
+    background-color: #b65c5c;
+} 
+.header_navbar {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    padding: 0px;
+    margin: 5px;
+    text-align: left;
+    display: inline-block;
+}
+.header_navbar_navbar_ul {
+    margin: 0;
+    padding: 0;
+}
+.header_navbar_navitem {
+    display: inline-block;
+    padding: 10px 5px;
+}
+.header_navbar_navitem:hover {
+    background-color: #ccc;
+}
+.header_navbar_navitem_navlink {
+    text-decoration: none;
+    color: #000;
+}
+.header_navbar_navitem_navlink:hover {
+    text-decoration: none;
+    color: rgb(165, 18, 18);
+}
+
+
+section h1{
+    text-align: center;
+    margin: 10px 0pxv;
+    padding: 5px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgb(139, 139, 139);
+}
+.recetas{
+    display: flex;
+    grid-area: recetas;
+    justify-content: space-around;
+    grid-gap: 10px;
+    text-align: left;
+    background-color: #f5f5f5;
+}
+
+
+
+aside{
+    grid-area:aside;
+}
+aside h3{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #f5f5f5;
+}
+aside ul{
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px;
+    background-color: #ccc;
+    box-shadow: 0 0 5px rgb(139, 139, 139);
+    border-radius: 5px;
+}
+aside ul li a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+footer{
+    grid-area: footer;
+}
+.footer {
+    background-color: #f5f5f5;
+    padding: 0px;
+    margin: 8px 0px;
+    text-align: right;
+}
+.footer_nav{
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 7px rgb(192, 192, 192);
+    padding: 0px;
+    margin: 5px 20px;
+
+    display: inline-block;
+}
+.footer_nav_il{
+    margin: 0;
+    padding: 0;
+}
+.footer_nav_il_link{
+    text-decoration: none;
+    color: #000;
+    border-right: 1px solid #ccc;
+    padding: 4px;
+    margin: 0px;
+}
+.footer_nav_il_link:hover {
+    text-decoration: none;
+    color: rgb(165, 18, 18);
+}
+
+

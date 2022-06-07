@@ -1,0 +1,232 @@
+.body{
+    background-image: url("https://as1.ftcdn.net/v2/jpg/02/15/22/24/1000_F_215222458_YOwLVKx8QHe6bzzWfbRhslBQlB3W5VQU.jpg") ;
+    flex-direction: column;
+    display: flex;
+}
+h1{
+    padding: 0 0 0 30px;
+    margin: 0px;
+}
+hr{
+    border: 1px solid black;
+}
+p{
+    padding: 0 0 0 8px;
+    margin: 5px;
+    color: rgb(22, 21, 21);
+}
+
+#grid_index {
+    display: grid;
+    grid-template-rows: auto auto auto ;
+    grid-template-columns: 75% auto;    
+    grid-template-areas: 
+        "header header"
+        "receta aside"
+        "footer footer";
+}
+header{
+    grid-area: header;
+}
+div#receta{
+    grid-area:receta;
+}
+aside{
+    background-color: #f5f5f5;
+    padding: 10px;
+    grid-area:aside;
+}
+footer{
+    margin-top: 8px;
+    grid-area:footer;
+}
+
+
+.header {
+    background-color: #ebebeb;
+    box-shadow: 0 0 5px rgb(139, 139, 139);
+    padding: 0px;
+    margin: 0px;
+} 
+.header_navbar {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    padding: 0px;
+    margin: 5px;
+    text-align: left;
+    display: inline-block;
+}
+.header_navbar_navbar_ul {
+    margin: 0;
+    padding: 0;
+}
+.header_navbar_navitem {
+    display: inline-block;
+    padding: 10px 5px;
+}
+.header_navbar_navitem:hover {
+    background-color: #ccc;
+}
+.header_navbar_navitem_navlink {
+    text-decoration: none;
+    color: #000;
+}
+.header_navbar_navitem_navlink:hover {
+    text-decoration: none;
+    color: rgb(165, 18, 18);
+}
+
+
+
+.encabezado{
+    background-image: url("https://thumbs.dreamstime.com/b/comida-mexicana-doble-borde-vista-superior-sobre-fondo-de-banner-madera-oscura-con-espacio-copia-frontera-el-un-cartel-tacos-191565020.jpg");
+    padding: 20px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    box-shadow: 0 0 10px rgb(182, 182, 182);
+}
+.encabezado_h1 {
+    font-size: 40px;
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    color: rgb(151, 0, 0);
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.contenido {
+    flex-wrap: wrap;
+    flex-direction: row ;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 0px;
+}
+.contenido_titulo{
+    background-color: #f5f5f5;
+    text-shadow: 2px 2px 4px #d8a1a1;
+    color: rgb(151, 0, 0);
+    text-align: left;
+    padding-top: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0px;
+}
+.contenido_section{
+    background-color: #ffffff;
+    flex-direction: column;
+    display: flex;
+    padding: 15px;
+    border: 1px solid #ccc;
+    padding-top: 5px;
+    margin: 5px;
+    width: 45%;
+}
+.contenido_recetas{
+    background-color: #ffffff;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+
+}
+.contenido_section_receta_img{
+        width: 400px;
+        padding: 0px;
+        margin: 10px 0px 30px 0px;
+        align-self: center;
+        box-shadow: 0 0 10px  rgb(9, 12, 14);
+        border-radius: 4px;
+}
+.contenido_section_receta_a{
+    display: flex;  
+    justify-content: center;
+}
+.contenido_section_receta_texto{
+    flex-direction: column;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+.contenido_section_receta_texto_titulo{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.contenido_section_receta_texto_parrafo{
+    text-align: left;
+    margin: 10px 20px;
+}
+
+
+
+
+.contenido_aside{
+    border-left: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+    background-color: hsl(0, 0%, 100%);
+    display: flex; 
+    flex-direction: column;
+    padding: 15px 0px;
+    margin: 0px 10px;
+}
+.contenido_aside_img{
+    width: 300px;
+    padding: 0px;
+    margin: 10px 0px 30px 0px;
+    align-self: center;
+    box-shadow: 0 0 10px  rgb(9, 12, 14);
+    border-radius: 4px;
+}
+.contenido_aside_h4{
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.footer {
+    background-color: #f5f5f5;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+}
+.footer_nav{
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 7px rgb(192, 192, 192);
+    padding: 0px;
+    margin: 5px 20px;
+
+    display: inline-block;
+}
+.footer_nav_il{
+    margin: 0;
+    padding: 0;
+}
+.footer_nav_il_link{
+    text-decoration: none;
+    color: #000;
+    border-right: 1px solid #ccc;
+    padding: 4px;
+    margin: 0px;
+}
+.footer_nav_il_link:hover {
+    text-decoration: none;
+    color: rgb(165, 18, 18);
+}
+
+
+

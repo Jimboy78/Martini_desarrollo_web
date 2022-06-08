@@ -78,7 +78,13 @@ footer{
     color: rgb(165, 18, 18);
 }
 
+.encabezado_logo{
+    -webkit-animation:scale-up-center 5s cubic-bezier(.39,.575,.565,1.000) infinite both;
+    animation:scale-up-center 5s cubic-bezier(.39,.575,.565,1.000) infinite both;
+}
 
+@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.2);transform:scale(1.2)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+@keyframes scale-up-center{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.2);transform:scale(1.2)}100%{-webkit-transform:scale(1);transform:scale(1)}}
 
 .encabezado{
     background-image: url("https://thumbs.dreamstime.com/b/comida-mexicana-doble-borde-vista-superior-sobre-fondo-de-banner-madera-oscura-con-espacio-copia-frontera-el-un-cartel-tacos-191565020.jpg");
@@ -139,13 +145,20 @@ footer{
 
 }
 .contenido_section_receta_img{
-        width: 400px;
-        padding: 0px;
-        margin: 10px 0px 30px 0px;
-        align-self: center;
-        box-shadow: 0 0 10px  rgb(9, 12, 14);
-        border-radius: 4px;
+    width: 400px;
+    padding: 0px;
+    margin: 10px 0px 30px 0px;
+    align-self: center;
+    box-shadow: 0 0 10px  rgb(9, 12, 14);
+    border-radius: 4px;
 }
+.contenido_section_receta_img:hover{
+    -webkit-animation:receta_img .5s cubic-bezier(.215,.61,.355,1.000) both;animation:receta_img .5s cubic-bezier(.215,.61,.355,1.000) both;
+    box-shadow: 0 0 15px  rgb(135, 145, 2);
+}
+@-webkit-keyframes receta_img{0%{-webkit-transform:scale(1);transform:scale(1)}100%{-webkit-transform:scale(1.05);transform:scale(1.05)}}
+@keyframes receta_img{0%{-webkit-transform:scale(1);transform:scale(1)}100%{-webkit-transform:scale(1.05);transform:scale(1.05)}}
+
 .contenido_section_receta_a{
     display: flex;  
     justify-content: center;
